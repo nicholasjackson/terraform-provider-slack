@@ -1,0 +1,4 @@
+.envrc
+example/terrform-provider-slack
+terrform.tfstate
+terraform.tfstate.backup
