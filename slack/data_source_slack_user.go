@@ -53,7 +53,7 @@ func dataSourceSlackUserRead(d *schema.ResourceData, meta interface{}) error {
 
 	user, err := api.GetUserByEmail(email)
 	if err != nil {
-		return fmt.Errorf("Could not fetch user: %s", meta.(*Config).APIKey)
+		return fmt.Errorf("Could not fetch user: %s", err)
 	}
 
 	d.Set("id", user.ID)
