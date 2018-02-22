@@ -1,4 +1,6 @@
 .envrc
 example/terrform-provider-slack
-terrform.tfstate
+terraform.tfstate
 terraform.tfstate.backup
+.terraform/*
+terraform-provider-slack

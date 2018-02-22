@@ -1,4 +1,4 @@
-package main
+package slack
 
 import (
 	"github.com/hashicorp/terraform/helper/schema"
@@ -15,8 +15,8 @@ func Provider() *schema.Provider {
 			},
 		},
 
-		ResourcesMap: map[string]*schema.Resource{
-			"slack_bot": resourceBot(),
+		DataSourcesMap: map[string]*schema.Resource{
+			"slack_user": dataSourceSlackUser(),
 		},
 
 		ConfigureFunc: providerConfigure,
