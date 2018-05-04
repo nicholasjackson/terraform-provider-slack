@@ -1,2 +1,2 @@
 build:
-	go build -o example/terraform-provider-slack
+	go build -o terraform-provider-slack
